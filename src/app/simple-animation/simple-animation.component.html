@@ -1,0 +1,7 @@
+<h1>Animation test (simple example)</h1>
+
+<button (click)="onToggleShow()">Show the text</button>
+
+<div *ngIf="isShowing" @fadeIn @fadeOut>
+  It's a block with fade in/fade out
+</div>

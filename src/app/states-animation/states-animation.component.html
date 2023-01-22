@@ -1,0 +1,12 @@
+<h1>Animation test (states example)</h1>
+
+<button (click)="onToggleShow()">Show the text</button>
+
+<div
+  *ngIf="isShowing"
+  @fadeInOut
+  (@fadeInOut.start)="onAnimationStart($event)"
+  (@fadeInOut.done)="onAnimationDone($event)"
+>
+  It's a block with fade in/fade out
+</div>
